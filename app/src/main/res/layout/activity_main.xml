@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:weightSum="9"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+
+        android:scrollbars="none"
+        android:id="@+id/horizontalScrollViewExpression"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="ExtraText">
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+
+        <TextView
+
+            android:scrollHorizontally="false"
+            android:id="@+id/txtOperation"
+            android:textColor="?attr/colorOnPrimary"
+            android:textAlignment="viewEnd"
+            android:textSize="@dimen/textView_text_big"
+            android:maxLines="3"
+            android:singleLine="true"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    </HorizontalScrollView>
+
+
+    <TextView
+
+        android:id="@+id/txtResult"
+        android:textAlignment="viewEnd"
+        android:textSize="@dimen/textView_text_small"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <View
+
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </View>
+
+    <TableLayout
+
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:layout_weight="5.25"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TableRow
+
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+
+                android:id="@+id/btnAC"
+                style="@style/TextAppearance.AppCompat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?selectableItemBackground"
+                android:text="@string/ac"
+                android:textColor="#EF6C00"
+                android:textSize="@dimen/button_text_size_small">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/btnOpenBrace"
+                style="@style/TextAppearance.AppCompat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?selectableItemBackground"
+                android:text="@string/open_brace"
+                android:textColor="#EF6C00"
+                android:textSize="@dimen/button_text_size_big">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/btnCloseBrace"
+                style="@style/TextAppearance.AppCompat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?selectableItemBackground"
+                android:text="@string/close_brace"
+                android:textColor="#EF6C00"
+                android:textSize="@dimen/button_text_size_big">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/btnDivision"
+                style="@style/TextAppearance.AppCompat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?selectableItemBackground"
+                android:text="@string/division"
+                android:textColor="#EF6C00"
+                android:textSize="@dimen/button_text_size_big">
+
+            </Button>
+
+        </TableRow>
+
+        <TableRow
+
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+
+                style="@style/TextAppearance.AppCompat"
+                android:id="@+id/btn7"
+                android:background="?selectableItemBackground"
+                android:textSize="@dimen/button_text_size_big"
+                android:text="@string/_7"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </Button>
+
+            <Button
+
+                style="@style/TextAppearance.AppCompat"
+                android:id="@+id/btn8"
+                android:background="?selectableItemBackground"
+                android:textSize="@dimen/button_text_size_big"
+                android:text="@string/_8"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </Button>
+
+            <Button
+
+                style="@style/TextAppearance.AppCompat"
+                android:id="@+id/btn9"
+                android:background="?selectableItemBackground"
+                android:textSize="@dimen/button_text_size_big"
+                android:text="@string/_9"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/btnMultiply"
+                style="@style/TextAppearance.AppCompat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?selectableItemBackground"
+                android:text="@string/in"
+                android:textColor="#EF6C00"
+                android:textSize="@dimen/button_text_size_big">
+
+            </Button>
+
+        </TableRow>
+
+        <TableRow
+
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+
+                style="@style/TextAppearance.AppCompat"
+                android:id="@+id/btn4"
+                android:background="?selectableItemBackground"
+                android:textSize="@dimen/button_text_size_big"
+                android:text="@string/_4"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </Button>
+
+            <Button
+
+                style="@style/TextAppearance.AppCompat"
+                android:id="@+id/btn5"
+                android:background="?selectableItemBackground"
+                android:textSize="@dimen/button_text_size_big"
+                android:text="@string/_5"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </Button>
+
+            <Button
+
+                style="@style/TextAppearance.AppCompat"
+                android:id="@+id/btn6"
+                android:background="?selectableItemBackground"
+                android:textSize="@dimen/button_text_size_big"
+                android:text="@string/_6"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/btnMinus"
+                style="@style/TextAppearance.AppCompat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?selectableItemBackground"
+                android:text="@string/minus"
+                android:textColor="#EF6C00"
+                android:textSize="@dimen/button_text_size_big">
+
+            </Button>
+
+        </TableRow>
+
+        <TableRow
+
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+
+                style="@style/TextAppearance.AppCompat"
+                android:id="@+id/btn1"
+                android:background="?selectableItemBackground"
+                android:textSize="@dimen/button_text_size_big"
+                android:text="@string/_1"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </Button>
+
+            <Button
+
+                style="@style/TextAppearance.AppCompat"
+                android:id="@+id/btn2"
+                android:background="?selectableItemBackground"
+                android:textSize="@dimen/button_text_size_big"
+                android:text="@string/_2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </Button>
+
+            <Button
+
+                style="@style/TextAppearance.AppCompat"
+                android:id="@+id/btn3"
+                android:background="?selectableItemBackground"
+                android:textSize="@dimen/button_text_size_big"
+                android:text="@string/_3"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/btnPlus"
+                style="@style/TextAppearance.AppCompat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?selectableItemBackground"
+                android:text="@string/plus"
+                android:textColor="#EF6C00"
+                android:textSize="@dimen/button_text_size_big">
+
+            </Button>
+
+        </TableRow>
+
+        <TableRow
+
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+
+                android:id="@+id/btnBack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?selectableItemBackground"
+                android:layoutDirection="rtl"
+                android:text="@string/back"
+                android:textColor="#EF6C00"
+                android:textSize="@dimen/button_text_size_big">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/btn0"
+                android:background="?selectableItemBackground"
+                android:textSize="@dimen/button_text_size_big"
+                android:text="@string/_0"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/btnDot"
+                android:background="?selectableItemBackground"
+                android:textSize="@dimen/button_text_size_big"
+                android:text="@string/dot"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </Button>
+
+            <FrameLayout
+
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+
+                    android:id="@+id/btnEqual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/circle_shape"
+                    android:gravity="center"
+                    android:text="@string/equal"
+                    android:textColor="#1B5E20"
+                    android:textSize="@dimen/button_text_size_big"
+                    tools:ignore="TextContrastCheck">
+
+                </TextView>
+
+            </FrameLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
