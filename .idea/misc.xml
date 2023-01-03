@@ -5,7 +5,14 @@
       <map>
         <entry key="..\:/Project/Calculator/App/Simple-Calculator/app/src/main/res/drawable/circle_shape.xml" value="0.2815" />
         <entry key="..\:/Project/Calculator/App/Simple-Calculator/app/src/main/res/drawable/ic_backspace.xml" value="0.2495" />
+        <entry key="..\:/Project/Calculator/App/Simple-Calculator/app/src/main/res/drawable/ic_clear.xml" value="0.2815" />
+        <entry key="..\:/Project/Calculator/App/Simple-Calculator/app/src/main/res/drawable/ic_division.xml" value="0.2815" />
+        <entry key="..\:/Project/Calculator/App/Simple-Calculator/app/src/main/res/drawable/ic_equal.xml" value="0.2815" />
         <entry key="..\:/Project/Calculator/App/Simple-Calculator/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2495" />
+        <entry key="..\:/Project/Calculator/App/Simple-Calculator/app/src/main/res/drawable/ic_minus.xml" value="0.2815" />
+        <entry key="..\:/Project/Calculator/App/Simple-Calculator/app/src/main/res/drawable/ic_multiply.xml" value="0.2815" />
+        <entry key="..\:/Project/Calculator/App/Simple-Calculator/app/src/main/res/drawable/ic_percentage.xml" value="0.2815" />
+        <entry key="..\:/Project/Calculator/App/Simple-Calculator/app/src/main/res/drawable/ic_plus.xml" value="0.2815" />
         <entry key="..\:/Project/Calculator/App/Simple-Calculator/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Project/Calculator/App/Simple-Calculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2495" />
         <entry key="..\:/Project/Calculator/App/Simple-Calculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2495" />
