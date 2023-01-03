@@ -1,4 +1,4 @@
-package com.example.calculator
+package com.nimacu.calculator988
 
 import org.junit.Test
 

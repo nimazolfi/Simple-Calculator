@@ -1,13 +1,13 @@
 // LET'S DO THIS AND BUILD A CALCULATOR ...
 //
 
-package com.example.calculator
+package com.nimacu.calculator988
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ViewTreeObserver
 import android.widget.Toast
-import com.example.calculator.databinding.ActivityMainBinding
+import com.nimacu.calculator988.databinding.ActivityMainBinding
 import net.objecthunter.exp4j.ExpressionBuilder
 
 class MainActivity : AppCompatActivity() {
@@ -386,11 +386,11 @@ class MainActivity : AppCompatActivity() {
         binding.txtOperation.append(newText)
 
         // The below code help the program to scroll the entered data to side
-        val vto :ViewTreeObserver = binding.horizontalScrollViewExpression.viewTreeObserver
+        val vto :ViewTreeObserver = binding.txtOperation.viewTreeObserver
         vto.addOnGlobalLayoutListener(object : ViewTreeObserver.OnGlobalLayoutListener{
             override fun onGlobalLayout() {
-                binding.horizontalScrollViewExpression.viewTreeObserver.removeOnGlobalLayoutListener(this)
-                binding.horizontalScrollViewExpression.scrollTo(binding.txtOperation.width, 0)
+                binding.txtOperation.viewTreeObserver.removeOnGlobalLayoutListener(this)
+                binding.txtOperation.scrollTo(binding.txtOperation.width, 0)
             }
         })
 
