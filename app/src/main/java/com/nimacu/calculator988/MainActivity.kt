@@ -9,6 +9,7 @@ import android.view.ViewTreeObserver
 import android.widget.Toast
 import com.nimacu.calculator988.databinding.ActivityMainBinding
 import net.objecthunter.exp4j.ExpressionBuilder
+import java.text.DecimalFormat
 
 class MainActivity : AppCompatActivity() {
 
@@ -191,16 +192,19 @@ class MainActivity : AppCompatActivity() {
                 // Conversion result to long if it's not a double
                 val longRes = result.toLong()
 
+                // Create a format from DecimalFormat class
+                val decimalFormat = DecimalFormat("#,###")
+
                 // Check the result is double or long
                 if (result == longRes.toDouble()) {
 
                     // The condition is met and result will be show as long
-                    binding.txtResult.text = longRes.toString()
+                    binding.txtResult.text = decimalFormat.format(longRes).toString()
 
                 } else {
 
                     // The condition isn't met and result will be show as double
-                    binding.txtResult.text = result.toString()
+                    binding.txtResult.text = decimalFormat.format(longRes).toString()
 
                 }
 
@@ -385,14 +389,14 @@ class MainActivity : AppCompatActivity() {
         // Appending the data that's get from other functions
         binding.txtOperation.append(newText)
 
-        // The below code help the program to scroll the entered data to side
-        val vto :ViewTreeObserver = binding.txtOperation.viewTreeObserver
-        vto.addOnGlobalLayoutListener(object : ViewTreeObserver.OnGlobalLayoutListener{
-            override fun onGlobalLayout() {
-                binding.txtOperation.viewTreeObserver.removeOnGlobalLayoutListener(this)
-                binding.txtOperation.scrollTo(binding.txtOperation.width, 0)
-            }
-        })
+//        // The below code help the program to scroll the entered data to side
+//        val vto :ViewTreeObserver = binding.txtOperation.viewTreeObserver
+//        vto.addOnGlobalLayoutListener(object : ViewTreeObserver.OnGlobalLayoutListener{
+//            override fun onGlobalLayout() {
+//                binding.txtOperation.viewTreeObserver.removeOnGlobalLayoutListener(this)
+//                binding.txtOperation.scrollTo(binding.txtOperation.width, 0)
+//            }
+//        })
 
     }
 }
